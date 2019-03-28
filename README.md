@@ -1,6 +1,6 @@
 # Tailwind CSS Webpack Starter Project
 
-This is an example of a super simple Webpack setup for using [Tailwind CSS](https://tailwindcss.com).
+This is an example of a super simple Webpack setup for using [Tailwind CSS](https://tailwindcss.com).  I cloned it from [tailwindcss/webpack-starter](https://github.com/tailwindcss/webpack-starter) and customized it to included *eslint*, *babel*, and *prettier* support.
 
 To get started, clone the project and install the dependencies:
 
@@ -30,6 +30,6 @@ npm run prod
 
 After that you will have a ready to deploy bundle at `/dist`
 
-## Contributing
+## Advanced
+See notes.org in this directory for additional detail on this configuration
 
-Have a lot of experience with Webpack and suggestions on how we could improve this starter template? We'd love a PR!

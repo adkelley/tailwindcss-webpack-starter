@@ -1,0 +1,19 @@
+#+Title: Webpack Tailwind Configuration Notes
+#+Options: toc:nil
+
+# Overview
+[[https://tailwindcss.com/docs/what-is-tailwind/][Tailwind]] is a utility-first CSS framework for rapidly building custom user interfaces. Tailwind is different from frameworks like Bootstrap, Foundation,
+or Bulma in that it's not a UI kit.
+A lot of the configuration ideas came from this [[https://carrieforde.com/webpack-wordpress/][Webpack for WordPress blog]]  It's well worth reading because the author does a good job
+of explaining webpack at a high level.
+
+# Webpack ^4.0
+A lot of references point to `extract-text-plugin`, change it to `mini-css-extract-plugin` instead.  It doesn't work with Webpack ^4.0
+
+# CSS
+Use *PurgeCss* to reduce the footprint of Tailwindcss.  For other strategies, see [[https://tailwindcss.com/docs/controlling-file-size/][Controlling File Size]].  See the *postcss.config.js* which tells
+webpack how to process the css using *tailwind.config.js*
+
+# Javscript
+I'm using Eslint, and Prettier.  I'm also using Babel to support Browsers that are 2 versions back (see .babelrc).  Naturally, change the .eslintc to support the
+your ECMAversion.
